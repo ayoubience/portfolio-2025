@@ -1,0 +1,39 @@
+# A Y O U B I E N C E Portfolio - 2025
+
+My portfolio, showcasing product design work/experience, writing/publishing, and other artistic endeavors.
+
+This is a mid-to-large overhaul of my prior UX portfolio that I built out back in 2020/2021, featuring:
+
+>(1) updated brand font usage (for simplicity) and colors (for improved WCAG accessibility)
+
+>(2) much more exploration into:
+>- animation
+>- chart implementation
+>- carousels
+>- tabs
+>- multiple overlay modals on a single page
+>- new back-to-top function with progress indicator built-in
+
+>(3) generally more simplified navigation (only "Work" is a dropdown on hover)
+>- removed dedicated "Contact" page (it only attracted spam)
+>- added link to resume directly in my navbar
+
+>(4) revamped/rewritten "About" page, new "Writing" page, updated "Art" to "Playground"
+>- poetry removed from "Playground" and merged into "Writing," which also features my book and other publications
+>- "About" includes how to contact me, as well as link to resume
+
+Below will be any version notes, to-dos, etc.
+
+---
+
+### [v0.5] AS OF NOV.2.2025:
+
+- push website
+- test across various devices, note issues with:
+    - load times
+    - any broken links
+    - compatibility across devices
+    - screen size responsiveness
+    - ***case study content suggestions/improvements***
+
+`When satisfied with updates, PURCHASE A NEW DOMAIN NAME AND CANCEL SUB FOR OLD ONE`
