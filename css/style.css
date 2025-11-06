@@ -56,7 +56,7 @@ section {display: block;}
 
 section li {list-style-type: disc; list-style-position: inside;}
 ol li {list-style-type: decimal !important;}
-.jumpto {font-weight: bold; line-height: 4rem !important;}
+.jumpto {font-weight: bold;}
 
 header {overflow: hidden;}
 
@@ -82,8 +82,7 @@ em {font-style: italic; font-family: "DM Serif Display"; color: rgba(20, 20, 20,
 
 .target-em {font-style: normal !important; display: none;}
 
-.quote-subhead,
-.btnline, h5 {font-weight: 500;}
+.quote-subhead, .btnline, h5 {font-weight: 500;}
 
 .pre-sec-title, .btnline,
 .transpbtn, .filledbtn, button, h3, h4, h6 {font-family: "Raleway", sans-serif;}
@@ -91,9 +90,8 @@ em {font-style: italic; font-family: "DM Serif Display"; color: rgba(20, 20, 20,
 h1, h2, .navbar, .sec-title, .breakquote {font-family: "DM Serif Display", serif;}
 
 .sec-title {
-  /*font-weight: 600;*/
   text-align: left;
-	line-height: 4.2rem;
+  line-height: 4.2rem;
 }
 
 h1, .quote-subhead, footer {color: #FBFBFB;}
@@ -205,11 +203,6 @@ img {
 	/*filter: drop-shadow(0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.1));
 	-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));*/
 	box-shadow: 0 0 2rem 0rem rgba(0, 0, 0, 0.1);
-}
-
-.padded-text {
-	padding-bottom: 4rem;
-	text-align: left;
 }
 
 table {width: 100%;}
@@ -486,7 +479,6 @@ footer {
 	background-position: center; /*used to be center 62%*/
 }
 
-
 .header-words {width: 100%;}
 
 .hero-hook {margin-top: 50%;}
@@ -528,6 +520,8 @@ footer {
 /*margins and paddings here so it's easier to call on in HTML*/
 .mb-10 {margin-bottom: 1rem;}
 
+.mb-15 {margin-bottom: 1.5rem;}
+
 .mb-20 {margin-bottom: 2rem;}
 
 .mb-30 {margin-bottom: 3rem;}
@@ -565,6 +559,8 @@ footer {
 .pb-20 {padding-bottom: 2rem;}
 
 .pb-30 {padding-bottom: 3rem;}
+
+.pb-40 {padding-bottom: 4rem;}
 
 .pb-50 {padding-bottom: 5rem;}
 
@@ -607,8 +603,9 @@ footer {
 
 .smallertitlelargerres {
 	font-family: "Raleway", sans-serif !important;
-	font-size: 2.1rem;
-	line-height: 2.7rem;
+	font-size: 2.2rem;
+	font-weight: 500;
+	line-height: 2.8rem;
 	margin: 5rem 0;
 	color: #fbfbfb;
 }
@@ -824,7 +821,6 @@ a,
 .dropdown:hover .dropbtn,
 .dropdown-content a:hover,
 .f-social i,
-.ideation_img,
 .close {
 	transition: all ease 0.5s;
 	-webkit-transition: all ease 0.5s;
@@ -928,38 +924,7 @@ a,
 .p-0 {padding: 0;}
 .m-0 {margin: 0;}
 
-.wireframebg {
-	background-size: cover;
-	padding: 22.5rem 0;
-	height: 50rem;
-}
-
-.ideation_img {
-	border: 1px solid rgba(226, 193, 145, 0.66);
-	border-radius: 0.75rem;
-	box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
-	cursor: pointer;
-}
-
-.styleguide_img {
-	border-radius: 0.75rem;
-	box-shadow: 0 0 2.5rem 0 rgba(0, 0, 0, 0.05);
-}
-
-.ideation_img:hover {
-	border: 1px solid #C99B57;
-	box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.15);
-	cursor: zoom-in;
-}
-
-.busybusmockup {
-	max-width: 375px !important;
-	height: auto !important;
-}
-
 .container-maximum .iterative-img {max-width: 75%;}
-
-.hifi-mockups {padding: 0 1.5rem;}
 
 .full-vh {height: 100vh;}
 
@@ -1400,7 +1365,6 @@ a.rolling-text:hover{
   font-weight: 300;
   margin-bottom: 0;
 }
-.testimonial_box-name h4, .testimonial_box-job p {text-align: right;}
 
 .no-desk {
 	display: block;
@@ -1672,7 +1636,17 @@ a.rolling-text:hover{
 .mySlides video {max-width: 100%;}
 
 
-/*RESPONSIVE DESIGN RULES ( media queries here)*/
+/*=====================================================================*/
+/*RESPONSIVE DESIGN RULES (media queries here)*/
+
+/*this query here is just for the hero section of home & writing pages when tilting mobile devices to landscape view*/
+@media all and (max-width: 450px) and (max-height: 950px) {
+	.full-vh {height: 70rem !important;}
+}
+/* @media all and (max-height: 450px) and (max-width: 950px) {
+	.full-vh {height: 70rem !important;}
+} */
+
 /*the bits of code in this query were more convenient to leave as is*/
 @media all and (min-width: 440px) {
 	.rolling-text {
@@ -1693,8 +1667,6 @@ a.rolling-text:hover{
 	.secondary-btn {margin-top: 3rem;}
 
 	.copr {padding-top: 3rem;}
-
-	.wireframebg button {display: none;}
 
 	.smallersubheader {
 		font-size: 2.2rem;
@@ -1741,11 +1713,12 @@ a.rolling-text:hover{
 }
 
 @media all and (min-width: 500px) {
-	.colors-selected {margin: 0 0.75rem;}
 	.col-md-5-v2 img {
 		width: 100%;
 		max-width: 80%;
 	}
+	#skmt-img-mobile img {padding: 0 15%;}
+
 }
 
 @media all and (min-width: 576px) {
@@ -1758,21 +1731,14 @@ a.rolling-text:hover{
 	.modal {padding-top: 7rem; padding-bottom: 8rem;}
 	.captiontext {bottom: -6rem;}
 
-	.ideation_img {
-		max-width: 75%;
-		height: auto;
-	}
-
 	.navbar h1 {
 		display: inline-flex;
 		max-width: 202px;
 	}
 
 	.trifold.design-philo {margin: 0 15%;}
-
-	#skmt-img img {max-height: 45rem; width: auto;}
-
 }
+
 /*below 3 media queries are for flex issues for stats*/
 @media all and (max-width: 599px) {
 	#padfix1 {padding-bottom: 2rem;}
@@ -1949,7 +1915,7 @@ a.rolling-text:hover{
 	  line-height: 6.5rem;
 	}
 
-	.smallertitlelargerres {width: 77%;}
+	/* .smallertitlelargerres {width: 77%;} */
 
 	.quote-subhead {
 	  font-size: 2.4rem;
@@ -1990,18 +1956,10 @@ on the homepage, as well as the down arrow to scroll to work*/
 
 	.nomobile-pad {padding-left: 3rem;}
 
-	.colors-selected {margin: 0 1rem;}
-
-	.busybusbtn {padding-top: 5rem;}
-
-	.solologo {max-height: 20rem; width: auto;}
-
 	.photos-header, .digitalart-header {
 		background-position: center;
 		height: 60rem;
 	}
-
-	.home-header p {width: 70%;}
 
 	.digitalart-header, .other-header, .header-hook-short {height: 60rem;}
 
@@ -2029,7 +1987,7 @@ on the homepage, as well as the down arrow to scroll to work*/
 		bottom: 5rem;
 	}
 
-	.mouse-scroll {margin-top: 10rem;} /*maybe 20vh ?*/
+	.mouse-scroll {margin-top: 9.5rem;} /*maybe 20vh ?*/
 
 	.hero-hook {margin-top: 25vh;}
 
@@ -2094,12 +2052,11 @@ on the homepage, as well as the down arrow to scroll to work*/
 
 	.navbar h1 {display: inline-flex;}
 
-  .container {max-width: 94rem;}
+  	.container {max-width: 94rem;}
 	.narrowcontent {max-width: 84rem !important;}
 
 	.home-header {width: 100% !important;}
-	.home-header h1, .header-words h1 {width: 74%;}
-	.home-header p {width: 100%;}
+	/* .home-header h1, .header-words h1 {width: 74%;} */
 	.smallertitlelargerres {
 		font-size: 2.6rem;
 		line-height: 3.8rem;
@@ -2116,11 +2073,6 @@ on the homepage, as well as the down arrow to scroll to work*/
 
 	.no-desk-late {display: none;}
 
-	.padded-text {
-		padding: 0 4rem 4rem 4rem;
-		text-align: center;
-	}
-
 	.trifold-about h6 {padding: 0 4rem;}
 
 	.flex-container.center-align {padding-bottom: 0;}
@@ -2130,13 +2082,16 @@ on the homepage, as well as the down arrow to scroll to work*/
 	#sampleVideo {padding: 2rem 0;}
 }
 
+@media all and (max-width: 1299px) {
+	.displayabove1300 {display: none;}
+}
 @media all and (min-width: 1300px) {
   .container {max-width: 120rem;}
+  .displaybelow1300 {display: none;}
 	.narrowcontent {max-width: 95rem !important;}
 	.narrowmore {max-width: 80rem !important;}
 	.bifold {width: 72%;}
 	.digitalart-header {background-position: 0% 59%;}
-	.padded-text {padding: 0 7rem 4rem 7rem;}
 	.container-medium {max-width: 180rem;}
 	.trifold-about {margin: 0 4rem;}
 	.rolling-text {
