@@ -538,6 +538,8 @@ footer {
 
 .mt-10 {margin-top: 1rem;}
 
+.mt-15 {margin-top: 1.5rem;}
+
 .mt-20 {margin-top: 2rem;}
 
 .mt-30 {margin-top: 3rem;}
@@ -616,22 +618,14 @@ footer {
 	padding: 3rem 0;
 }
 
-i.fa-solid.downar.fa-chevron-down {
-	color: #E2C191;
-	display: block;
-	font-size: 3.5rem;
-	margin-top: 2rem;
-	padding: 0.5rem 1rem;
-	text-align: center;
+.projectstatpill {
+	font-size: 1.4rem;
+	border-radius: 10rem;
+	border: 1px solid #267F29;
+	background: #F2F6F3; /*#267F29 4% opacity afainst #FBFBFB*/
+	padding: 0.3rem 2rem;
+	margin: 0.75rem;
 }
-.downarrow {
-	display: block !important;
-	transition: all ease 0.5s;
-	-webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-}
-
-.downarrow:hover, .downarrow-mobile:hover {color: #A37D45 !important;}
 
 
 /*=====================================================================*/
@@ -831,7 +825,7 @@ a,
 	display: block;
 	height: auto;
 	text-align: center;
-	vertical-align: middle;
+	vertical-align: middle; /*this isn't being ignored, not sure why VSC is saying it is*/
 }
 
 .caseinfo {align-items: center;}
@@ -886,6 +880,11 @@ a,
 	margin: auto;
 	text-align: center;
 	height: auto;
+}
+
+.smallersubheader {
+	font-size: 2.2rem;
+	line-height: 3rem;
 }
 
 .userinsights-stats, .project-stats {
@@ -1081,7 +1080,8 @@ td {
 }
 td:last-child {border-right: 0px;}
 
-.positive-stat {color: #267F29; font-weight: 600;} /*against light BG*/
+.positive-stat {color: #267F29; font-weight: 700;} /*against light BG*/
+.positive-stat-semibold {color: #267F29; font-weight: 600;} /*against light BG*/
 .negative-stat {color: #7F2626; font-weight: 500;} /*against light BG*/
 
 /*Owl Carousel styling, no idea why some of these elements have to be exact pixels but we move*/
@@ -1587,7 +1587,6 @@ a.rolling-text:hover{
 }
 
 .digitalart-header {background-image: url(../img/abstract-gradient-cover.png);}
-/*.digitalart-header .container {background:rgba(0,0,0,0.5);} reduced brightness for hero image*/
 
 .digital-art {max-width: 40rem; height: auto; border-radius: 0.2rem;}
 
@@ -1620,6 +1619,7 @@ a.rolling-text:hover{
 .artwork {width: 100%; height: auto;}
 
 .notbuiltyet {cursor: not-allowed !important; opacity: 0.5;}
+h2.notbuiltyet {cursor: auto !important;}
 
 .left-align {text-align: left;}
 .borderless {border: none !important;}
@@ -1667,11 +1667,6 @@ a.rolling-text:hover{
 	.secondary-btn {margin-top: 3rem;}
 
 	.copr {padding-top: 3rem;}
-
-	.smallersubheader {
-		font-size: 2.2rem;
-		line-height: 3rem;
-	}
 
 	h1 {
 		width: 100%;
@@ -1922,13 +1917,6 @@ a.rolling-text:hover{
 	  line-height: 4.2rem;
 	}
 
-/*these next few lines come together to create a full viewport height
-on the homepage, as well as the down arrow to scroll to work*/
-
-	i.fa-solid.downar.fa-chevron-down {display: none;}
-
-	.downarrowpadding {padding-top: 15vh;}
-
 	.divequal {
 	  height: 47rem;
 	  display: table-cell;
@@ -1939,6 +1927,8 @@ on the homepage, as well as the down arrow to scroll to work*/
 		margin: 3rem 0;
 		max-width: 46rem;
 	}
+
+	.projectstatpill {margin: 0; margin-left: 1.5rem; margin-bottom: 1rem;}
 
 	.imgmax {padding-top: 0;}
 

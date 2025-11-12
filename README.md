@@ -25,12 +25,24 @@ This is a mid-to-large overhaul of my prior UX portfolio that I built out back i
 Below will be any version notes, to-dos, etc.
 
 ---
+### [v0.6.1] AS OF NOV.12.2025:
+
+- edited top of BeamElect case study to include an impact statement
+- deleted some unused CSS re; old chevron-down approach
+- added project stat pills to call out some relevant impacts
+- updated FAD image to video on homepage
+- inverted from `transpbtn` to `filledbtn darkbg-btn` classes for homepage "View case study" CTAs
+- created 'Find a Dentist' case study page, overview only for now, activated relevant links/buttons
+- added link to my LinkedIn recommendations section under "Testimonials" on "About" page
+
+`When satisfied with updates, push and then merge into main as well`
+
+---
 ### [v0.6] AS OF NOV.5.2025:
 
 - domain attached: now [ayoubience.com](https://ayoubience.com)!
 - deleting unnecessary files (mostly in 'ARCHIVE')
 - updating hero section height for home/writing pages so they don't cut off on landscape mobile views
-
 
 `When satisfied with updates, push and then merge into main as well`
 
