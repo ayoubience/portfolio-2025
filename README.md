@@ -25,6 +25,18 @@ This is a mid-to-large overhaul of my prior UX portfolio that I built out back i
 Below will be any version notes, to-dos, etc.
 
 ---
+### [v0.7] AS OF DEC.4.2025:
+
+- wrote out and coded in F.A.D. case study
+- updated relevant button copy linking to F.A.D. case study as well
+- very minor copy edits/revisions to 'About' page
+- added thick right and bottom mid-gold drop shadow (same code as case study tabs element drop shadow)
+- colored stat numbers on BeamElect case study, applied from F.A.D. case study
+- reduced KTaK-frontcover.jpg files size by 85% for faster loading
+
+`When satisfied with updates, push and then merge into main as well`
+
+---
 ### [v0.6.1] AS OF NOV.12.2025:
 
 - edited top of BeamElect case study to include an impact statement

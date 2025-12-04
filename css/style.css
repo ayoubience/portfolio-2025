@@ -68,9 +68,10 @@ hr {
 	border: 0;
 	border-top: 1px solid rgba(0, 0, 0, .1);
 }
-hr.darkdivider {
+hr.darkdivider, hr.darkdivider2 {
 	border-top: 1px solid rgba(0, 0, 0, .3);
 }
+.darkdivider2 {margin-top: 0 !important;}
 
 p, .text-light-bg, .tag {
 	color: #141414;
@@ -856,6 +857,15 @@ a,
 }
 
 .bg-darker, .bg-darker2, .bg-dark, .case1 button, .case3 button {background-color: #F4F4F4;}
+.bg-darkest {background-color: #3C576E;}
+
+.bg-darkest h1,
+.bg-darkest h2,
+.bg-darkest h3,
+.bg-darkest h4,
+.bg-darkest h5,
+.bg-darkest h6,
+.bg-darkest p {color: #FBFBFB;}
 
 .case1 {z-index: 9;}
 .case2 {z-index: 8;}
@@ -901,6 +911,8 @@ a,
 .userinsights-stats img {max-width: 330px;}
 
 .project-stats {align-items: baseline; display: block;}
+
+.context-note {border-left: 5px solid #3C576E; padding: 0.5rem 2rem;}
 
 .mobile_semidiv {border: 1px solid #DBDBDB;}
 
@@ -1082,6 +1094,7 @@ td:last-child {border-right: 0px;}
 
 .positive-stat {color: #267F29; font-weight: 700;} /*against light BG*/
 .positive-stat-semibold {color: #267F29; font-weight: 600;} /*against light BG*/
+.positive-stat-nobold {color: #267F29;} /*against light BG*/
 .negative-stat {color: #7F2626; font-weight: 500;} /*against light BG*/
 
 /*Owl Carousel styling, no idea why some of these elements have to be exact pixels but we move*/
@@ -1292,6 +1305,12 @@ a.rolling-text:hover{
 }
 .letter:nth-child(21) {
   transition-delay: 0.3s;
+}
+
+.me {
+	border-bottom-left-radius: 0.2rem !important;
+	border-bottom-right-radius: 0.2rem !important;
+	filter: drop-shadow(#A37D45 0.5rem 0.5rem) !important;
 }
 
 .breakquote {

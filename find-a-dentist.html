@@ -102,7 +102,7 @@
 				<div class="researchstats unbordered-fold center-align">
 					<h6 class="mb-20">Timeline</h6>
 					<p class="mb-10">4 months total</p>
-					<p>Jun 2021 - Aug 2021<br>Sep 2022</p>
+					<p>Jun 2021 - Aug 2021<br>Apr 2022</p>
 				</div>
 				<hr class="nodesk2">
 				<div class="researchstats leftandrightborderhere center-align">
@@ -116,7 +116,7 @@
 				<hr class="nodesk2">
 				<div class="researchstats unbordered-fold center-align">
 					<h6 class="mb-20">Tools</h6>
-					<p>Pen & paper<br>Figma<br>Google Meet</p>
+					<p>Pen & paper<br>Figma<br>Google Meet<br>Mouseflow</p>
 				</div>
 			</div>
 		</div>
@@ -126,13 +126,13 @@
 		<section class="row caseinfo">
 			<div class="col-md-7 nomobile-pad">
 				<h6 class="mb-20">Problem</h6>
-				<p>Beam's 'Find a Dentist' tool hadn't been updated in a long time. As such, there were some vulnerabilities and concerns with missing or inaccurate information, and the experience was not mobile-friendly or accessible (<span class="negative-stat"><b>>40% of visits were on a mobile device</b></span>). Site visitors would spend up to 5 minutes to find the office or information they needed. <span class="target-em">Additionally, we noticed that <span class="negative-stat"><b>over 40% of dental claims that members filed were with out-of-network (OON)</b></span> offices, which (at 1% ≅ $115k in additional costs) comes out to a <span class="negative-stat"><b>$4.6 million loss</b></span> that the business can and neede to mitigate. So we asked:</span></p>
+				<p>Beam's 'Find a Dentist' tool hadn't been updated in a long time. As such, there were some vulnerabilities and concerns with missing or inaccurate information, and the experience was not mobile-friendly or accessible (<span class="negative-stat"><b>>40% of visits were on a mobile device</b></span>). Site visitors would spend up to 5 minutes to find the office or information they needed. <span class="target-em">Additionally, we noticed that <span class="negative-stat"><b>over 40% of dental claims that members filed were with out-of-network (OON)</b></span> offices, which (at 1% ≅ $115k in additional costs) comes out to a <span class="negative-stat"><b>$4.6 million loss</b></span> that the business can and needed to mitigate. So we asked:</span></p>
 			</div>
 			<div class="col-md-5 nomobile-pad center-align">
-				<video playsinline autoplay loop muted class="minivid works-vid">
+				<video playsinline autoplay loop muted class="minivid works-vid" id="fad-old-mobile">
 					<source src="img/find-a-dentist/problemvideo.mp4" type="video/mp4">
 				</video>
-				<p class="mt-10 info-caption">My attempt at using the 'legacy' tool</p>
+				<p class="mt-10 info-caption-with_link">My attempt at using the 'legacy' tool. <a href="#fad-old-desktop"><b><u>Click here</u></b></a> to skip down to an image of the desktop experience.</p>
 			</div>
 		</section>
 
@@ -195,15 +195,282 @@
 		</div>
 	</div>
 
-<!--placeholder-->
-	<section class="bg-darker2" style="padding: 20rem 0rem;">
-		<section class="container narrowcontent center-align">
-			<h2 class="notbuiltyet">Full case study coming soon</h2>
+<!--'jump to' section-->
+	<section class="bg-darker2">
+		<hr>
+		<section class="container narrowcontent">
+			<div class="row ptb-50">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h2 class="sec-title mb-40">Jump to section...</h2>
+					<ol class="text-light-bg jumpto">
+						<li class="mb-15"><a href="#section1"><u>Comparative & Internal Analysis</u></a></li>
+						<li class="mb-15"><a href="#section2"><u>Exploration, Testing, Iteration</u></a></li>
+						<li class="mb-15"><a href="#section3"><u>Hi-fi Design & Post-Launch Updates</u></a></li>
+						<li><a href="#section4"><u>Additional Explorations</u></a></li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<hr>
+	</section>
+<!--SECTION 1-->
+	<section class="container narrowcontent" id="section1">
+		<section class="row pt-80 pb-100">
+			<div class="col-md-1"></div>
+			<section class="col-md-10">
+				<h5 class="pre-sec-title">Comparative & Internal Analysis</h5>
+				<h2 class="sec-title mb-50">Laying the Foundation</h2>
+				<p>The Find a Dentist tool was first built with minimal UX involvement in Beam's earlier stages. This, combined with the insights that the product and analytics teams had found around the tool's functionality and member (not) visiting in-network dental offices, meant that the experience needed an overhaul.</p>
+				<div class="flex-container">
+					<div class="flex-item rightborderdivider" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+						<h3 class="left-align mb-10 fontswap-serif negative-stat">>40%</h3>
+						<p>of visits to Find a Dentist were on a mobile device</p>
+					</div>
+					<div class="flex-item rightborderdivider" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+						<h3 class="left-align mb-10 fontswap-serif negative-stat">40%</h3>
+						<p>of dental claims that members filed were with out-of-network providers</p>
+					</div>
+					<div class="flex-item" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+						<h3 class="left-align mb-10 fontswap-serif negative-stat">$4.6mil</h3>
+						<p>added costs; every 1% of out-of-network claims costs Beam $115k</p>
+					</div>
+
+				</div>
+				<p>With the above in mind, we first analyzed a handful of medical provider search experiences, and noted the following themes:</p>
+				<ul class="text-light-bg pt-20 mb-50">
+					<li class="mb-10">map view available on larger screen sizes; in some experiences a map is shown on each individual result page when clicking into it</li>
+					<li class="mb-10">languages spoken <b>clearly</b> displayed either on search results page or on each individual result's page</li>
+					<li>each result displays office hours to some extent</li>
+					<!-- <li><s>search by insurance plan*</s></li> -->
+				</ul>
+				<!--tab content start-->
+				<h4 class="fontswap-serif left-align mb-20">Comparative sample screens</h4>
+				<div class="tabs mb-50">
+					<input type="radio" name="tabs" id="tabone" checked="checked">
+					<label for="tabone">Delta Dental</label>
+					<div class="tab">
+						<img src="img/find-a-dentist/screens-tab/deltadental-samplescreens.png" alt="sample mobile screens of the Delta Dental provider search experience from 2021">
+					</div>						
+					<input type="radio" name="tabs" id="tabtwo">
+					<label for="tabtwo">A.D.A.</label>
+					<div class="tab">
+						<img src="img/find-a-dentist/screens-tab/ada-samplescreens.png" alt="sample mobile screens of the A.D.A. (American Dental Association) provider search experience from 2021">
+					</div>						
+					<input type="radio" name="tabs" id="tabthree">
+					<label for="tabthree">Humana</label>
+					<div class="tab">
+						<img src="img/find-a-dentist/screens-tab/humana-samplescreens.png" alt="sample mobile screens of the Humana provider search experience from 2021">
+					</div>
+					<input type="radio" name="tabs" id="tabfour">
+					<label for="tabfour">B.C.B.S.</label>
+					<div class="tab">
+						<img src="img/find-a-dentist/screens-tab/bcbs-samplescreens.png" alt="sample mobile screens of the B.C.B.S. (Blue Cross Blue Shield) provider search experience from 2021">
+					</div>
+				</div>
+				<!--tab content end-->
+				<p class="mt-50">With regards to Beam's dentists search experience, we noted (based on our observations and on customer feedback):</p>
+				<ul class="text-light-bg pt-20">
+					<li class="mb-10">the tool overall was difficult to use (results show provider names and not practice names)</li>
+					<li class="mb-10">no indication who specifically within a practice may be accepting new patients vs who isn't</li>
+					<li class="mb-10">searching any parameters without filtering to the state gives results from a national perspective</li>
+					<li class="mb-10">map experience defaults to Columbus, OH (Beam HQ)</li>
+					<li class="mb-10">office hours not shown</li>
+					<li class="mb-10">some displayed practices aren't in any of the networks Beam works with (can't filter those out either)</li>
+					<li>general technical, functional, and accessibility issues</li>
+				</ul>
+				<div class="mb-50" id="fad-old-desktop"></div>
+				<img src="img/find-a-dentist/FaDSearchSpecialty-2021.png" data-aos="flip-left" data-aos-duration="800" data-aos-once="true" alt="a screenshot of Beam's old Find a Dentist experience on desktop, showing a map view with basic search results and filters to the left, and a baby blue top nav bar with a white logo and text">
+				<p class="pt-10 mb-50 info-caption-with_link center-align">The old F.A.D. desktop experience. <a href="#fad-old-mobile"><b><u>Click here</u></b></a> to go up to the mobile experience.</p>
+				<p>In short, there were many opportunities for updating Beam's dentist search experience!</p>
+			</section>
+		</section>
+	</section>
+<!--SECTION 2-->
+	<section class="bg-dark" id="section2">
+		<section class="container narrowcontent">
+			<div class="row ptb-100">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h5 class="pre-sec-title">Exploration, Testing, Iteration</h5>
+					<h2 class="sec-title mb-50">Setting Up the Scaffold</h2>
+					<p>Because this project had a 6-week window of completion, with expected post-launch updates and other technical limitations to consider, some of the features and feedback we wanted to implement immediately would need to be delayed. As such, I explored potential solutions without a map view. Priorities for initial launch included:</p>
+					<div class="row mb-20">
+						<div class="col-md-6 mt-20">
+							<p><em>Updated search parameters</em></p>
+							<ul class="text-light-bg">
+								<li>by ZIP</li>
+								<li>distance (10-mi radius default)</li>
+								<li>dentist first & last name</li>
+								<li>office/practice name</li>
+								<li>specialties</li>
+							</ul>
+						</div>
+						<div class="col-md-6 mt-20">
+							<p><em>Updated search results</em></p>
+							<ul class="text-light-bg">
+								<li>practice/office name</li>
+								<li>dentist(s) at practice</li>
+								<li>accepted network(s)</li>
+								<li>specialties</li>
+								<li>sort by closest to farthest</li>
+								<li>pagination (no infinite scrolling)</li>
+							</ul>
+						</div>
+					</div>
+					<p>The new digital real estate taken by the map would instead be used to communicate the value for site visitors and members going to an in-network dental office vs an out-of-network office, in an effort to close the 40% OON claims and resulting $4.6 million in additional costs to the business.</p>
+					
+					<!--owl carousel start, all images here must be same dimension-->
+					<div class="owl-carousel mt-30 mb-30">
+						<div class="item">
+							<img src="img/find-a-dentist/iteration-carousel/iteration 0.png" alt="sketch concepts for Find a Dentist mobile">
+							<p class="pt-20 center-align info-caption-with_link"><b>(1/4)</b> Fat marker sketches</p>
+						</div>
+
+						<div class="item">
+							<img src="img/find-a-dentist/iteration-carousel/iteration 1.png" alt="mid-fidelity wireframes based on sketches and team discussion">
+							<p class="pt-20 center-align info-caption-with_link"><b>(2/4)</b> Mid-fidelity wireframes (used for internal usability tests)</p>
+						</div>
+
+						<div class="item">
+							<img src="img/find-a-dentist/iteration-carousel/iteration 2.png" alt="high-fidelity screens - round 1">
+							<p class="pt-20 center-align info-caption-with_link"><b>(3/4)</b> high-fidelity screens - round 1 (used for external usability tests)</p>
+						</div>
+
+						<div class="item">
+							<img src="img/find-a-dentist/iteration-carousel/iteration 3.png" alt="high-fidelity screens - round 2">
+							<p class="pt-20 center-align info-caption-with_link"><b>(4/4)</b> high-fidelity screens - round 2 (used for internal + external usability tests)</p>
+						</div>
+					</div>
+					<!--owl carousel end-->
+
+					<p class="context-note"><em>Note:</em><em class="fontswap-sans"> with a co-designer and senior design guidance, we explored potential solutions as a team through sketching and whiteboarding, then diverged to flesh out the desktop and mobile experiences. I worked primarily on mobile.</em></p>
+
+					<p class="mtb-50">After creating a simple but satisfactory first iteration, we reconvened the drafted a research test plan for getting feedback and iterating on designs. We first tested internally, revised based on feedback, then updated design fidelity and tested externally, refined again, and re-tested one more time for both desktop and mobile experiences.</p>
+					<img style="border: 1px solid rgba(20, 20, 20, 0.2); border-radius: 2px;" src="img/find-a-dentist/researchplan-qs.PNG" alt="screenshot of the main portion of our research plan document for testing, uncovering insights, and ideating on our Find a Dentist concepts"
+					data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">
+					<p class="pt-10 info-caption-with_link center-align">The essence of our research plan for usability testing.</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="bg-darkest">
+		<section class="container narrowcontent">
+			<div class="row ptb-50">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h4 class="fontswap-serif left-align mb-20">Side quest!</h4>
+					<p class="mb-50">In addressing the need for radius-based search filtering, I realized Beam's design system did not have a slider component, so I created a set to use here and, if needed, in other experiences. This component would be built out in the developer library in parallel with general development of the new Find a Dentist experience. Hooray for fully building out my first design system component!</p>
+
+					<div class="center-align">
+					<a onclick="openModal();currentSlide(1)">
+						<img style="border-radius: 2px;" src="img/find-a-dentist/slider-component-set.png" class="pb-10" alt="a slider component set I created for the design system, using various styling (e.g. ticks vs no ticks), brand colors (shares of blue and purple), as well as light and dark mode versions" 
+						data-aos="flip-down" data-aos-duration="800" data-aos-once="true">
+					</a>
+					<p class="info-caption center-align">My component set, using different styles and brand colors. <b>Press image to enlarge.</b></p>
+				</div>
+				<div id="myModal" class="modal">
+					<div class="closebg" onclick="closeModal()"&times;></div>
+					<span class="close" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<img src="img/find-a-dentist/slider-component-set.png" alt="a slider component set I created for the design system, using various styling (e.g. ticks vs no ticks), brand colors (shares of blue and purple), as well as light and dark mode versions">
+						</div>
+					</div>
+				</div>
+
+				</div>
+			</div>
+		</section>
+	</section>
+<!--SECTION 3-->	
+	<section class="container narrowcontent" id="section3">
+		<section class="row ptb-100">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<h5 class="pre-sec-title">Hi-fi Design & Post-Launch Updates</h5>
+				<h2 class="sec-title mb-50">Building & Refining</h2>
+				<p>After testing design concepts for a few iterations, it came time to finalize designs for developer handoff.</p>
+				
+				<div class="center-align mt-30 mb-30">
+					<a onclick="openModalTwo();currentSlideTwo(1)">
+						<img src="img/find-a-dentist/final-designs-sprint1.png" class="pb-10" alt="" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+					</a>
+					<p class="info-caption center-align">Final designs for this first deployment of the new Find a Dentist experience. <b>Press image to enlarge.</b></p>
+				</div>
+				<div id="myModalTwo" class="modal">
+					<div class="closebg" onclick="closeModalTwo()"&times;></div>
+					<span class="close" onclick="closeModalTwo()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlidesTwo">
+							<img src="img/find-a-dentist/final-designs-sprint1.png" alt="">
+						</div>
+					</div>
+				</div>
+				
+				<!-- <img class="mtb-50" src="img/find-a-dentist/final-designs-sprint1.png" alt=""> -->
+
+				<p>By tracking sessions using Mouseflow (we observed time spent and activity on each page for the first few dozen visits post-launch) and hearing ancedotes from random users of the new Find a Dentist tool, we saw a massive reduction in time spent finding trying to find a provider.<br><br>We could not immediately gauge how much OON claims were reduced thanks to this redesign, but since we cut out and out-of-network practices from our backend database, we were <span class="positive-stat">100% confident that OON claims would drop significantly</span>.</p>
+				<!--chart start (script is below)-->
+				<div id="main-barchart-container" class="mtb-50">
+					<h5 class="center-align fontswap-serif mb-10">Average time spent in Find a Dentist</h5>
+					<div id="barchart-container">
+						<canvas id="barchart"></canvas>
+					</div>
+				</div>
+				<!--chart end (script is below)-->
+				<p>With the team feeling confident in this initial rollout, we looked to other business needs and goals that were previously out of scope:</p>
+				<ul class="text-light-bg pt-30 mb-30">
+					<li class="mb-10"><em>compliance language additions</em> to the tool</li>
+					<li class="mb-10">visually represent <em>handicap-accessible practices</em></li>
+					<li>update search parameters, including an <em>advanced search accordion</em></li>
+				</ul>
+				<p>We wanted to give members a robust search experience without overloading the page with these parameters, so it made most sense to hide the following behind an advanced search accordion:</p>
+				<ul class="text-light-bg pt-30 mb-30">
+					<li class="mb-10">show/hide practices not accepting new patients</li>
+					<li class="mb-10">filter provider by gender</li>
+					<li class="mb-10">handicap-accessibility</li>
+					<li class="mb-10">move 'search radius slider' into this bucket</li>
+					<li>move 'language' into this bucket</li>
+				</ul>
+				<p>Fortunately, these updates were easy to work into the new design, resulting in:</p>
+				
+				<video width="100%" height="auto" controls class="mt-50 mb-30" style="border-top: 1px solid #BABABA; border-radius: 2px;" aria-label="screen recording of my mobile prototype of Find a Dentist, in Figma">
+					<source src="img/find-a-dentist/mobile-prototype.mp4" type="video/mp4">
+				</video>
+				<p class="context-note"><em>Note:</em><em class="fontswap-sans"> although the prototype functions like the live experience, some changes were made on the backend to better match the developer UI library and Beam's Figma design system. Thus (as of 12/2025), some aspects of the live tool may be different.</em></p>
+				<!--button here-->
+				<div class="center-align mtb-50">
+					<button class="btnline lrgbtn filledbtn darkbg-btn" value="Button to view Beam's live 'Find a Dentist' search experience" onclick="window.open('https://dentists.beambenefits.com/', '_blank')"><div class="text">View live tool</div></button>
+				</div>
+				<p>Some of these updates were legal/compliance requirements but also served to further enhance the search experience by allowing for more robust filtering (if desired).</p>
+			</div>
+		</section>
+	</section>
+<!--SECTION 4-->
+	<section class="bg-dark" id="section4">
+		<section class="container narrowcontent">
+			<div class="row ptb-100">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h5 class="pre-sec-title">Additional Explorations</h5>
+					<h2 class="sec-title mb-50">What-ifs...</h2>
+					<p>About 1 year later, while in between projects, I wanted to revisit the possibility of including a map view once again, and redesigning the search result cards to: (1) be more visually aligned with Beam's rebrand the prior year, and (2) accommodate a feature for members to save 'favorite' or 'preferred' dental providers.</p>
+					<img class="mtb-50" src="img/find-a-dentist/new-FADcard-explorations.png" alt="updated search result card redesign concepts for desktop and mobile, including ratings, accepting new patients, phone number, and office hours">
+					<p>I couldn't fully explore a new map view due to other high-priority projects that came up, but the immediate thoughts and ideas I considered were:</p>
+					<ul class="text-light-bg pt-30 mb-30">
+						<li class="mb-10">toggle between list and map views (primarily for desktop view)</li>
+						<li class="mb-10">search result listings auto-adjust based on panning or zooming on the map</li>
+						<li>introduce option to 'use current location'</li>
+					</ul>
+					<p>My goal with both the map view and search result card redesign was to provide clearer and more visually nuanced information to people using the tool without sacrificing any of the enhancements we made in redesigning Find a Dentist in the first place. Hopefully they may one day be implemented!</p>
+				</div>
+			</div>
 		</section>
 	</section>
 
 <!--NEXT/PREVIOUS CASE STUDIES NAV-->
-<!-- <hr class="darkdivider"> -->
+<hr class="darkdivider2">
 	<section class="container narrowcontent center-align pt-50 pb-100">
 		<h4>Next case study:</h4>
 		<hr>
@@ -254,7 +521,7 @@
 				x: {
 					title: {
 						display: true,
-						text: '% of respondents',
+						text: 'Time (minutes)',
 						font: {
 							family: 'Raleway',
 							size: 16,
@@ -295,15 +562,12 @@
 			}
 		}
 		const data = {
-			labels: ['Strongly disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly agree'],
+			labels: ['Old experience', 'New experience'],
 			datasets: [{
-				data: [25, 24, 22, 29, 0],
+				data: [5, 0.5],
 				backgroundColor: [
 					'rgba(226,193,145,0.7)',
-					'rgba(226,193,145,0.7)',
-					'rgba(226,193,145,0.7)',
-					'rgba(163,125,69, 0.9)',
-					'rgba(226,193,145,0.7)'
+					'rgba(163,125,69, 0.9)'
 				],
 				label: '% of respondents'
 			}]
