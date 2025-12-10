@@ -25,6 +25,15 @@ This is a mid-to-large overhaul of my prior UX portfolio that I built out back i
 Below will be any version notes, to-dos, etc.
 
 ---
+### [v0.7.1] AS OF DEC.10.2025:
+
+- more tightly/correctly described project timelines for BeamElect + FAD
+- bullet-pointed solution metrics for BeamElect
+- enhanced homepage description of BeamElect to match closer to what I did + impact (like for FAD)
+
+`When satisfied with updates, push and then merge into main as well`
+
+---
 ### [v0.7] AS OF DEC.4.2025:
 
 - wrote out and coded in F.A.D. case study
