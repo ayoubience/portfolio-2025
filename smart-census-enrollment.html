@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164207580-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-164207580-1');
+	</script>
+	<title>Smart Census Enrollment – AYOUBIENCE (Ahmed Ayoub)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--<link rel='stylesheet' href='css/bootstrap.min.css'> This may not be needed???--> <!--customized from https://getbootstrap.com/docs/3.4/customize/ to get the bare-minimum. Full bootstrap screws all styling up regardless of stylesheet order-->
+	<link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'> <!--strictly for the back-to-top with scroll progress arrow, can't use FontAwesome here for whatever reason-->
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="img/favicon_2025_filled.png"> <!--can add _32px after if the 32px version is needed for any reason-->
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<!--owl carousel stylesheet-->
+	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.css'>
+	<!--data-aos animation library-->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://kit.fontawesome.com/b1245b5baa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="img/brandlogo.svg" alt="logo"></a>
+			<a href="index.html" class="navbar-name"><h1>AYOUBIENCE</h1></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn"/>
+			<!--checkbox, will allow for hamburger click-->
+			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+			<!--this will be turned into the 3 lines that make up the hamburger menu-->
+			<ul class="menu">
+				<li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="javascript:void(0)" style="color: #E2C191;" id="first-menu-item">Work</a>
+						</div>
+						<div class="dropdown-content">
+							<a href="beamelect.html">BeamElect</a>
+							<a href="find-a-dentist.html">Find a Dentist</a>
+							<a href="#" style="color: #E2C191; background: black;">Smart Census Enrollment</a>
+							<a href="javascript:void(0)" class="notbuiltyet" id="last-menu-item">EOI Medical Questionnaire</a>	<!--eoi-medq.html-->
+						</div>
+					</div>
+				</li>
+				<li><a href="about.html">About</a></li>
+				<!-- <li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="about.html">About</a>
+						</div>
+						<div class="dropdown-content shorter-drop">
+							<a href="about.html">About me</a>
+							<a href="about.html#testimonials">Testimonials</a>
+							<a href="about.html#contact" id="last-menu-item">Get in touch</a>
+						</div>
+					</div>
+				</li> -->
+				<li><a href="https://drive.google.com/file/d/1-9GMf7jo4FYGxKqWQG0zKe6swdzbeEMf/view" target="_blank">Résumé</a></li>
+				<!--<li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="writing.html">Writing</a>
+						</div>
+						<div class="dropdown-content shorter-drop">
+							<a href="writing.html">My book</a>
+							<a href="writing.html#pubs" id="last-menu-item">Publications</a>
+						</div>
+					</div>
+				</li>-->
+				<li><a href="writing.html">Writing</a></li>
+				<li><a href="playground.html">Playground</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="pt-50">
+		<div class="container animated animatedFadeInUp fadeInUp">
+			<h2 class="pt-100 mb-20" id="top">Smart Census Enrollment</h2>			
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8">
+					<h4 class="mb-50 smallersubheader">(Re)designing a smarter census enrollment upload experience to improve data accuracy and integrity, resulting in a first-pass <span class="positive-stat">88% satisfaction rate</span>.</h4>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<img src="img/smart-census-enrollment/header.png" class="project-header animated animatedFadeInUp fadeInUp delayed" alt="Smart Census Enrollment">
+	</section>
+<!--quick details section-->
+	<section class="container">
+		<div class="mtb-50 animated animatedFadeInUp fadeInUp delayed">
+			<div class="project-stats">
+				<div class="researchstats unbordered-fold center-align">
+					<h6 class="mb-20">Timeline</h6>
+					<p class="mb-10">5 weeks</p>
+					<p>Mar 2025 - Apr 2025</p>
+				</div>
+				<hr class="nodesk2">
+				<div class="researchstats leftandrightborderhere center-align">
+					<h6 class="mb-20">Roles</h6>
+					<p>UX design<br>
+						UI design<br>
+						Interaction design<br class="no-mob">
+					</p>
+				</div>
+				<hr class="nodesk2">
+				<div class="researchstats unbordered-fold center-align">
+					<h6 class="mb-20">Tools</h6>
+					<p>Figma<br>FigJam<br>Pen & paper</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="mobile_semidiv mtb-50 no-desk"></div>
+
+		<section class="row caseinfo">
+			<div class="col-md-7 nomobile-pad">
+				<h6 class="mb-20">Problem</h6>
+				 <p>Census files hold <em class="fontswap-sans"><b>a lot</b></em> of employee-related data. Uploading and working on them has historically been a pain point for internal (Beam employees working in the Admin system) and external demographics (using Lighthouse or connecting with Beam's support teams). Non-standard file format uploads, contextual information that may be correct but technically is a mismatch (think SSNs with vs without dashes), and needing to connect with help can result in a minutes-long process taking hours or even days to troubleshoot.<span class="target-em"> Also, as part of Beam's partnership with The Hartford Insurance Group, our systems would be integrating and communicating to fulfill census-related needs or requirements. To that end, we asked:</span></p>
+			</div>
+			<div class="col-md-5 nomobile-pad center-align">
+				<video playsinline autoplay loop muted class="minivid works-vid borderless shadowless" style="max-height: 400px; max-width: auto;">
+					<source src="img/smart-census-enrollment/problemvideo.mp4" type="video/mp4">
+				</video>
+				<p class="mt-10 info-caption">Video by ArtHouse Studio from Pexels</p>
+			</div>
+		</section>
+
+		<div class="no-desk mt-30">
+			<p>Also, as part of Beam's partnership with The Hartford Insurance Group, our systems would be integrating and communicating to fulfill census-related needs or requirements. To that end, we asked ourselves:</p>
+		</div>
+
+		<section class="container narrowcontent">
+			<div class="breakquote mtb-50">
+				<div data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">How might we overhaul the census enrollment experience to improve usability and data accuracy to save users time and streamline uploads?</div>
+			</div>
+		</section>
+
+		<section class="row caseinfo mb-50">
+			<div class="container narrowcontent nomobile-pad">
+				<h6 class="mb-20">Process</h6>
+				<p class="mb-30">There were already some good directions I could run from: some competitors, Beam's current Admin census enrollment experience, and Beam's quoting tool's census enrollment UX. Using these as a foundation, I made sure to align with the Product team on my proposed direction, then relied on our Research team to weave usability tests into their ongoing interviews with brokers and HR admins while I fleshed out the prototype.</p>
+				<img src="img/smart-census-enrollment/process/desktop.png" class="no-mob process-flow" alt="my process for designing the smart census enrollment: analyze/align on/explore current state and direction, then build the hi-fi designs, refine and prototype, then review with engineers and PMs for handoff" 
+					data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+			</div>
+			<div class="col-md-6 nomobile-pad center-align no-desk">
+				<img src="img/smart-census-enrollment/process/mobile.png" class="process-flow-mobile" alt="my process for designing the smart census enrollment: analyze/align on/explore current state and direction, then build the hi-fi designs, refine and prototype, then review with engineers and PMs for handoff" 
+					data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+			</div>			
+		</section>
+
+		<section class="row caseinfo pb-50">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<h6 class="mb-20">Solution</h6>
+				<p>This new census enrollment experience for the Admin system would address the need for accommodating multiple census upload scenarios, while modernizing the UI to match the backend work being done to enable 'smart-matching' parsing capabilities.</p>
+				<br><br>
+				<p>the UX Research team tested designs using a System Usability Scale (SUS), and found that the prototype fell within the 'acceptable' range (B+, an average score of 88). Users can, through this new experience:</p>
+				<ul class="text-light-bg mt-10 mb-10">
+					<li><span class="positive-stat">choose how to upload their census data</span></li>
+					<li><span class="positive-stat">update data as needed</span> if flagged for errors, or simply review to ensure no further changes needed</li>
+					<li>receive <span class="positive-stat">near-instant confirmation that their upload succeeded or failed</span> (with action steps to try again or contact support)</li>
+				</ul>
+				<video width="100%" height="auto" playsinline autoplay loop muted class="minivid works-vid works-vid2 borderless shadowless mt-20" style="border-radius: 2px;" aria-label="A recording of my prototype for Beam's census enrollment experience">
+					<source src="img/smart-census-enrollment/samplevideo.mp4" type="video/mp4">
+				</video>
+			</div>
+		</section>
+	</section>
+
+	<div class="mb-100">
+		<div class="center-align">
+			<button class="btnline lrgbtn filledbtn darkbg-btn" value="Button to view the census enrollment prototype" onclick="window.open('https://www.figma.com/proto/An5AVXFNr22S9zQm0Pjnab/Census-Enrollment-Prototype?page-id=2500%3A10507&node-id=2500-40687&viewport=1133%2C-1417%2C0.06&t=nisN7JOxSQ9Ks9I6-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2500%3A40687', '_blank')"><div class="text">View prototype</div></button>
+		</div>
+	</div>
+
+<!--'jump to' section-->
+	<section class="bg-darker2">
+		<hr>
+		<section class="container narrowcontent">
+			<div class="row ptb-50">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h2 class="sec-title mb-40">Jump to section...</h2>
+					<ol class="text-light-bg jumpto">
+						<li class="mb-15"><a href="#section1"><u>Analysis & Alignment</u></a></li>
+						<li class="mb-15"><a href="#section2"><u>Exploration</u></a></li>
+						<li class="mb-15"><a href="#section3"><u>Hi-fi Design & Prototyping</u></a></li>
+						<li><a href="#section4"><u>Review, Negotiation, Hand-off</u></a></li>
+					</ol>
+				</div>
+			</div>
+		</section>
+		<hr>
+	</section>
+<!--SECTION 1-->
+	<section class="container narrowcontent" id="section1">
+		<section class="row pt-80 pb-100">
+			<div class="col-md-1"></div>
+			<section class="col-md-10">
+				<h5 class="pre-sec-title">Analysis & Alignment</h5>
+				<h2 class="sec-title mb-50">Ingredients for a Census Experience</h2>
+				<p>Beam's current internal census upload experience was in great need of an overhaul, and the UX Research team was already speaking with insurance broker and HR admins about their experiences. The overall process felt disjointed, prone to errors along the way.</p>
+				<div class="flex-container">
+					<div class="flex-item" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+						<h3 class="left-align mb-10 fontswap-serif negative-stat">90%</h3>
+						<p>of interviewees wanted more control over the census upload process</p>
+					</div>
+				</div>
+				<p class="mb-50">This wasn't surprising, when considering the current state of this experience: corresponding with Beam support teams to share and upload files, and having to ensure everything matches.</p>
+				<!--owl carousel start, all images here must be same dimension-->
+				<div class="owl-carousel" data-aos="zoom-in" data-aos-duration="800" data-aos-once="true">
+					<div class="item">
+						<img src="img/smart-census-enrollment/currentstateadmin carousel/currentstate-admin-01.png" alt="Screenshot of Beam's Admin screen for uploading a census file">
+						<p class="pt-20 center-align info-caption-with_link"><b>(1/3)</b> Current Admin experience for uploading a census file</p>
+					</div>
+
+					<div class="item">
+						<img src="img/smart-census-enrollment/currentstateadmin carousel/currentstate-admin-02.png" alt="Screenshot of Beam's Admin screen showing a census was uploaded, with a clickable ID #">
+						<p class="pt-20 center-align info-caption-with_link"><b>(2/3)</b> History of census file uploads (sample shown here)</p>
+					</div>
+
+					<div class="item">
+						<img src="img/smart-census-enrollment/currentstateadmin carousel/currentstate-admin-03.png" alt="Screenshot of Beam's Admin screen showing details about the census uplaod from the prior screen">
+						<p class="pt-20 center-align info-caption-with_link"><b>(3/3)</b> Details about the census file just uploaded (clicked on '87d26c' from prior screen)</p>
+					</div>
+				</div>
+				<!--owl carousel end-->
+				<p class="mt-30 mb-50">...even less surprising when considering competitors like GuardianLife's EMMA platform, or MyEnroll360 by Benefit Allocation Systems, Inc...</p>
+
+				<img src="img/smart-census-enrollment/guardianlife-emma 01.png" alt="Sample screenshot of GuardianLife's EMMA platform for census enrollment handling" data-aos="flip-right" data-aos-duration="800" data-aos-once="true">
+
+				<p class="mtb-50">...and, of course, there is the census enrollment upload experience in Beam's quoting tool.</p>
+				
+				<div style="position: relative; padding-bottom: 64.61077844311377%; height: 0;">
+					<iframe src="https://www.loom.com/embed/cf972ffaf2844b098e40a269f813fa3f" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+				</div>
+				<p class="pt-10 center-align info-caption-with_link">Play at the 4:00 mark (or click <a href="https://www.loom.com/share/cf972ffaf2844b098e40a269f813fa3f?t=241" target="_blank"><b><u>here</u></b></a> to open video in Loom)</p>
+
+				<p class="mt-50 pb-20">This experience was an embedded add-on within the overall quoting ecosystem and thus did not have many robust features. Here was an opportunity to expand capabilities. Before designing, I wanted to ensure alignment with the involved PMs for my design direction by first mapping our the experience. This initiative had some important backend work being done in parallel, so I wanted to account for that:</p>
+				<p class="context-note mb-30"><em class="fontswap-sans"> The PM team was working on <b>introducing a smart parsing and matching backend process</b> that would absorb data fed to it, attempt to standardize the data formats and match them to appropriate data points (columns), and re-present it to the end user in the UI to further refine or edit (if or as needed).</em></p>
+
+				<div class="center-align" data-aos="flip-down" data-aos-duration="800" data-aos-once="true">
+					<a onclick="openModal();currentSlide(1)">
+						<img src="img/smart-census-enrollment/censusenrollmentwizard-flow_ideation.png" alt="an outline of the process for the census enrollment experience, including backend efforts and other technical + design considerations">
+					</a>
+					<p class="mb-50 info-caption center-align">Flow ideation for the census enrollment experience. <b>Press image to enlarge.</b></p>
+				</div>
+				<p>With everything laid out now, it was time to start prepping some designs!</p>
+				<div id="myModal" class="modal">
+					<div class="closebg" onclick="closeModal()"&times;></div>
+					<span class="close" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<img src="img/smart-census-enrollment/censusenrollmentwizard-flow_ideation.png" alt="an outline of the process for the census enrollment experience, including backend efforts and other technical + design considerations">
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</section>
+<!--SECTION 2-->
+	<section class="bg-dark" id="section2">
+		<section class="container narrowcontent">
+			<div class="row pt-100">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h5 class="pre-sec-title">Exploration</h5>
+					<h2 class="sec-title mb-50">Prepping the Main Design</h2>
+					<p>I broke out sketches into 2 buckets so I can give each aspect proper consideration:</p>
+					<div class="row mb-20">
+						<div class="col-md-6 mt-20">
+							<p><em>Upload options screen</em></p>
+							<ul class="text-light-bg pt-10">
+								<li class="pb-10">3 options needed: custom file upload, template, or manual input</li>
+								<li>present options as individual CTAs? Accordions?</li>
+							</ul>
+						</div>
+						<div class="col-md-6 mt-20">
+							<p><em>Census data edit screen</em></p>
+							<ul class="text-light-bg pt-10">
+								<li class="pb-10">how to handle error messaging/presentation?</li>
+								<li>status banners and/or tooltips?</li>
+								<li>filters/table manipulation actions (e.g. 'undo')?</li>
+							</ul>
+						</div>
+					</div>
+					<p>I then discussed my potential approaches with the PM team for any technical considerations and the UX team for any other design considerations.</p>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="bg-dark ptb-50">
+		<section class="container">
+			<!--owl carousel start, all images here must be same dimension-->
+			<h4 class="fontswap-serif left-align mb-20">Upload options screen sketches</h4>
+			<div class="owl-carousel mb-40">
+				<div class="item">
+					<img src="img/smart-census-enrollment/sketch carousels/selection screen 01.png" alt="" style="border: 1px solid rgba(20, 20, 20, 0.2); border-radius: 2px;">
+					<p class="pt-20 center-align info-caption-with_link"><b>(1/2)</b> Approach #1: each upload option as a CTA button</p>
+				</div>
+				<div class="item">
+					<img src="img/smart-census-enrollment/sketch carousels/selection screen 02.png" alt="" style="border: 1px solid rgba(20, 20, 20, 0.2); border-radius: 2px;">
+					<p class="pt-20 center-align info-caption-with_link"><b>(2/2)</b> Approach #2: each upload option is embedded in an accordion</p>
+				</div>
+			</div>
+			<!--owl carousel end-->
+			<!--owl carousel start, all images here must be same dimension-->
+			<h4 class="fontswap-serif left-align mb-20">Census data edit screen sketches</h4>
+			<div class="owl-carousel">
+				<div class="item">
+					<img src="img/smart-census-enrollment/sketch carousels/maintable screen 01.png" alt="" style="border: 1px solid rgba(20, 20, 20, 0.2); border-radius: 2px;">
+					<p class="pt-20 center-align info-caption-with_link"><b>(1/2)</b> Error handling</p>
+				</div>
+				<div class="item">
+					<img src="img/smart-census-enrollment/sketch carousels/maintable screen 02.png" alt="" style="border: 1px solid rgba(20, 20, 20, 0.2); border-radius: 2px;">
+					<p class="pt-20 center-align info-caption-with_link"><b>(2/2)</b> Table functions</p>
+				</div>
+			</div>
+			<!--owl carousel end-->
+		</section>
+	</section>
+	<section class="bg-dark">
+		<section class="container narrowcontent">
+			<div class="row pb-100">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<p>I decided on the accordion approach for upload selection, with the 'Upload a file' option expanded by default (to maintain some visual consistency with the quoting tool experience). The team and I were happy with the concept for the table screen, but I would need to dig deeper into how error handling would work, so I moved on to high-fidelity mockups to gain a better sense of how I wanted to address this feature.<br><br>Time to cook up this experience. 👨🏽‍🍳</p>
+				</div>
+			</div>
+		</section>
+	</section>
+<!--SECTION 3-->	
+	<section class="container narrowcontent" id="section3">
+		<section class="row ptb-100">
+			<div class="col-md-1"></div>
+			<div class="col-md-10">
+				<h5 class="pre-sec-title">Hi-fi Design & Prototyping</h5>
+				<h2 class="sec-title mb-50">Full Course Prototype</h2>
+				<p>I collaborated with the lead designer for Beam's quoting tool; he owned the entire design experience ans was very knowledgeable about its nuances. Although this project was different, there were still some design directions and ideas that overlapped and could be implemented here; this proved a very fruitful conversation. Notable examples were:</p>
+				<ul class="text-light-bg pt-30 mb-30">
+					<li class="mb-10"><em>single-click in-line editing</em> (not having to click an edit button)</li>
+					<li class="mb-10"><em>error handling via individual cells</em> (color fill + outline, potential on-hover messaging)</li>
+					<li><em>error handling for an entire column</em> (similar to how entire rows are handled)</li>
+				</ul>
+				<p class="mb-30">There was also opportunity to deep-dive into creating a design system component (a 'molecule,' relative to Brad Frost's atomic design framework) related to error-handling and progression/resolution. I experimented with gradient vs solid brand colors, considering potential colorblindness issues too.</p>
+				
+				<div class="center-align" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+					<a onclick="openModalTwo();currentSlideTwo(1)">
+						<img src="img/smart-census-enrollment/error progress exploration.png" class="pb-10" alt="potential ideas for the error progress handling I wanted to include in the census enrollment experience, including gradient colors, solid colors, and what each exploration would look like with various colorblindness conditions">
+					</a>
+					<p class="info-caption center-align">Error handling/progression explorations. <b>Press image to enlarge.</b></p>
+				</div>
+				<div id="myModalTwo" class="modal">
+					<div class="closebg" onclick="closeModalTwo()"&times;></div>
+					<span class="close" onclick="closeModalTwo()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlidesTwo">
+							<img src="img/smart-census-enrollment/error progress exploration.png" alt="potential ideas for the error progress handling I wanted to include in the census enrollment experience, including gradient colors, solid colors, and what each exploration would look like with various colorblindness conditions">
+						</div>
+					</div>
+				</div>
+
+				<p class="mt-30">As cool as it would have been to use gradients here, it made more sense to use solid colors from an accessibility and technical POV (engineering the gradients would take extra time and effort for little to no value).
+					<br><br>
+					After designing a few key screens for the UX Research team, they ran tests and integrated questions about his new experience concept into interviews they were already conducting with brokers and HR admins. They asked interviewees to rate and score using a SUS (System Usability Scale) scoring system, to favorable results.
+				</p>
+				<div class="flex-container">
+					<div class="flex-item" data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+						<h3 class="left-align mb-10 fontswap-serif positive-stat">B+ (88%)</h3>
+						<p>Average SUS score for the census enrollment mockups ('acceptable;' the uppermost range for this rubric)</p>
+					</div>
+				</div>
+				<p>Then came the fun part: weaving the web of interactions together, baking in all the various interactions, letting it marinate here & there, until we had a full prototype review to showcase.</p>
+				<video width="100%" height="auto" controls class="mt-50" style="border-top: 1px solid #BABABA; border-radius: 2px;" aria-label="screen recording of my census enrollment prototype, done in Figma">
+					<source src="img/smart-census-enrollment/Census Enrollment Prototype.mp4" type="video/mp4">
+				</video>
+				<div class="center-align mtb-50">
+					<button class="btnline lrgbtn filledbtn darkbg-btn" value="Button to view the census enrollment prototype" onclick="window.open('https://www.figma.com/proto/An5AVXFNr22S9zQm0Pjnab/Census-Enrollment-Prototype?page-id=2500%3A10507&node-id=2500-40687&viewport=1133%2C-1417%2C0.06&t=nisN7JOxSQ9Ks9I6-1&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=2500%3A40687', '_blank')"><div class="text">View prototype</div></button>
+				</div>
+				<p class="context-note"><em>Note:</em><em class="fontswap-sans"> Design, Product, and Engineering all agreed to:
+					<br>&bull; consolidate the census upload 'custom upload' and 'template' options into 1 accordion
+					<br>&bull; repurpose the current state manual input to load a blank in-app table that one can manually enter data into
+					<br>&bull; rename the existing experience's manual input to 'Smart-match raw data'</em>
+				</p>
+				<p class="mt-30">The design was well-received by all teams...but unfortunately capacities and priorities shifted last-minute, so we had to pivot to a more basic design concept, outside of the Admin platform (this was the most technically complex system in the entire organization, compounded by the fact that there were no built-in design system elements from UX or Engineering).</p>
+			</div>
+		</section>
+	</section>
+<!--SECTION 4-->
+	<section class="bg-dark" id="section4">
+		<section class="container narrowcontent">
+			<div class="row ptb-100">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h5 class="pre-sec-title">Review, Negotiation, Hand-off</h5>
+					<h2 class="sec-title mb-50">A Smaller Portion</h2>
+					<p>Due to shifting business needs, timelines, and priorities at the time of building out this census enrollment prototype, the engineering team, product managers, and I came together to discuss best next steps.
+						<br><br>
+						We decided on building a 'lighter' version of this experience in our Lighthouse system, since it would be much easier to recycle design system components from the developer library as opposed to re-building them in a new system that needed a massive overhaul, resulting in the following design choices:
+					</p>
+					<ul class="text-light-bg pt-30 mb-30">
+						<li class="mb-10">adds one new page to the existing Lighthouse experience</li>
+						<li class="mb-10">recycles the drag & drop upload experience from the quoting tool, with additions for using a standard template file</li>
+						<li class="mb-10">backend parsing with basic frontend progress bar + message updates</li>
+						<li class="mb-10">includes a success or error message at the end</li>
+						<li>confirmation email to be sent upon successful submission</li>
+					</ul>
+					<div class="center-align" data-aos="flip-left" data-aos-duration="1000" data-aos-once="true">
+						<a onclick="openModalThree();currentSlideThree(1)">
+							<img src="img/smart-census-enrollment/lighthouse MVP.png" class="mt-30 pb-20" alt="">
+						</a>
+						<p class="info-caption center-align">Proposed census enrollment MVP. <b>Press image to enlarge.</b></p>
+					</div>				
+					<div id="myModalThree" class="modal">
+						<div class="closebg" onclick="closeModalThree()"&times;></div>
+						<span class="close" onclick="closeModalThree()">&times;</span>
+						<div class="modal-content">
+							<div class="mySlidesThree">
+								<img src="img/smart-census-enrollment/lighthouse MVP.png" alt="">
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="bg-darkest">
+		<section class="container">
+			<div class="row ptb-50">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h4 class="fontswap-serif left-align mb-20">Side quest!</h4>
+					<div class="row">
+						<div class="col-md-5" id="padfix1">
+							<p>Our resident graphic designer, lead product designer, and I decided it would be fun to explore ideas for visual delight within the loading screens of the census enrollment experience. Although nothing came of it in the end due to the previously mentioned shifting business needs, there was a good foundation being built for similar experience moving forward. Here are the concepts we wanted to further explore.</p>
+						</div>
+						<div class="col-md-7">
+							<!--owl carousel start, all images here must be same dimension-->
+							<div class="owl-carousel">
+								<div class="item">
+									<img src="img/smart-census-enrollment/sidequest carousel/sidequest 01.png" alt="" style="border-radius: 2px;">
+									<p class="pt-10 center-align info-caption-with_link"><b>(1/2)</b></p>
+								</div>
+								<div class="item">
+									<img src="img/smart-census-enrollment/sidequest carousel/sidequest 02.png" alt="" style="border-radius: 2px;">
+									<p class="pt-10 center-align info-caption-with_link"><b>(2/2)</b></p>
+								</div>
+							</div>
+							<!--owl carousel end-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</section>
+	<section class="bg-dark">
+		<section class="container narrowcontent">
+			<div class="row ptb-100">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<p>While this initiative was deprioritized (scheduled to begin development in Q3 2025), we as a team were confident in the directions for the MVP designs. The plan would be to build that out, test it in real-time, and as feedback is being gathered, start work on the main course in Beam's Admin system.
+						<br><br>
+						This would enable anyone working with census files to feel confident in submitting their data files, knowing that Beam’s system will easily flag any actions or corrections needed. After all, looking at the same excel sheet for too long can drive anyone mad!
+					</p>
+				</div>
+			</div>
+		</section>
+	</section>
+<!--NEXT/PREVIOUS CASE STUDIES NAV-->
+<hr class="darkdivider2">
+	<section class="container narrowcontent center-align pt-50 pb-100">
+		<h4>Next case study:</h4>
+		<hr>
+		<div class="row">
+			<div class="col-md-1"></div>
+			<div class="col-md-10 center-align">
+				<h5 class="pre-sec-title">Beam Benefits</h5>
+				<h2 class="mb-20">EOI Medical Questionnaire</h2>
+				<p class="projectlabel mb-20">UX design &nbsp;|&nbsp; Information Architecture</p>
+				<p>Digitizing a paper-mail application experience to provide near-instantaneous decisioning for people requesting additional insurance coverage.</p>
+				<button class="btnline lrgbtn transpbtn notbuiltyet mt-30 goright" onclick="window.location.href = 'javascript:void(0)';"><div class="text">CASE STUDY COMING SOON&nbsp;<i class="fa-solid fa-angles-right"></i></div></button>
+			</div>
+		</div>
+	</section>
+
+<!--BACK TO TOP SCROLL PROGRESS. Gratitude to Ivan Grozdic's demo in CodePen: https://codepen.io/ig_design/pen/yrwgwO -->
+	<div class="progress-wrap">
+		<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+		</svg>
+	</div>
+<!--FOOTER-->
+	<footer>
+		<div class="container">
+				<div class="center-align">
+					<div class="f-social">
+						<a href="https://www.linkedin.com/in/ayoubience/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://medium.com/@ayoubience" target="_blank"><i class="fa-brands fa-medium"></i></a>
+						<a href="mailto:ayoubience@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+						<!--This email link would directly open up Gmail and start a new mail, which wouldn't be ideal for non-Gmail users. <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ayoubience@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>-->
+					</div>
+					<div class="mt-20">
+						<small class="copr">&#169; 2025 <span style="letter-spacing: 0.2rem;">&nbsp;AYOUBIENCE</span> / Ahmed Ayoub<br>Hand-built with HTML/CSS/JS, some <i class="fa-solid fa-mug-hot"></i>, and lots of <i class="fa-solid fa-heart"></i> & <i class="fa-solid fa-music"></i></small>
+					</div>
+				</div>
+		</div>
+	</footer>
+
+	<script src="js/modaloverlayv2.js"></script>
+
+	<!--scripts for carousel for case study-->
+	<script src='https://code.jquery.com/jquery-1.11.1.min.js'></script>
+  	<script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.js'></script>
+	<script src="js/casestudy-carousel.js"></script>
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+	<script src="js/back-to-top-with-progress-indicator.js"></script>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	    AOS.init();
+	</script>
+	<!--AOS animation list/visual examples can be found @ https://michalsnik.github.io/aos/ -->
+</body>
+
+</html>

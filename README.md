@@ -24,6 +24,17 @@ This is a mid-to-large overhaul of my prior UX portfolio that I built out back i
 
 Below will be any version notes, to-dos, etc.
 
+
+---
+### [v0.8] AS OF JAN.14.2025:
+
+- some very minor copy changes across pages
+- NEW CASE STUDY: smart census enrollment
+- added link to "Still Searching For Lost Time" under 'Articles & Essays' on Writing page
+- Removed CSS line for media query >1000px : `.sec-title {line-height: 6rem;}`
+
+`When satisfied with updates, push and then merge into main as well`
+
 ---
 ### [v0.7.1] AS OF DEC.10.2025:
 

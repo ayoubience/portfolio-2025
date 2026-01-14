@@ -922,7 +922,7 @@ a,
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
-  padding: 5rem 0;
+  padding: 4rem 0;
   flex-direction: column;
 }
 
@@ -1651,6 +1651,7 @@ h2.notbuiltyet {cursor: auto !important;}
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 0.5rem;
 }
+.minivid.works-vid2 {max-width: 100% !important;}
 
 .mySlides video {max-width: 100%;}
 
@@ -2071,8 +2072,6 @@ h2.notbuiltyet {cursor: auto !important;}
 		line-height: 3.8rem;
 		margin: 7.5rem 0;
 	}
-
-	.sec-title {line-height: 6rem;}
 
 	.projectinfo {line-height: 3.4rem;}
 
