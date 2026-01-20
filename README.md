@@ -32,6 +32,7 @@ Below will be any version notes, to-dos, etc.
 - NEW CASE STUDY: smart census enrollment
 - added link to "Still Searching For Lost Time" under 'Articles & Essays' on Writing page
 - Removed CSS line for media query >1000px : `.sec-title {line-height: 6rem;}`
+- updated copyright in footer from 2025 to 2026
 
 `When satisfied with updates, push and then merge into main as well`
 
