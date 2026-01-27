@@ -26,6 +26,13 @@ Below will be any version notes, to-dos, etc.
 
 
 ---
+### [v0.8.1] AS OF JAN.26.2025:
+
+- deleted my TT account, so I needed to replace the embedded videos in my Playground page with the actual videos I downloaded and saved
+
+`When satisfied with updates, push and then merge into main as well`
+
+---
 ### [v0.8] AS OF JAN.14.2025:
 
 - some very minor copy changes across pages
