@@ -2088,6 +2088,8 @@ h2.notbuiltyet {cursor: auto !important;}
 	#padfix1 {padding-top: 10%;}
 
 	#sampleVideo {padding: 2rem 0;}
+
+	.info-caption.pt-10 {padding-left: 50px; padding-right: 50px;}
 }
 
 @media all and (max-width: 1299px) {
