@@ -28,6 +28,14 @@ Below will be any version notes, to-dos, etc.
 ---
 ### [v0.8.1] AS OF JAN.26.2025:
 
+- slight recruiter suggestions factored into case studies
+- updated resume link
+
+`When satisfied with updates, push and then merge into main as well`
+
+---
+### [v0.8.1] AS OF JAN.26.2025:
+
 - deleted my TT account, so I needed to replace the embedded videos in my Playground page with the actual videos I downloaded and saved
 
 `When satisfied with updates, push and then merge into main as well`
