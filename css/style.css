@@ -788,6 +788,22 @@ footer {
     }
 }
 
+@keyframes fadeInDown {
+    from {transform: translate3d(0,0,0);}
+    to {
+        transform: translate3d(0,1.5rem,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInDown {
+    from {-webkit-transform: translate3d(0,0,0);}
+    to {
+        -webkit-transform: translate3d(0,1.5rem,0);
+        opacity: 1;
+    }
+}
+
 .animated {
     animation-duration: 0.75s;
     animation-fill-mode: both;
@@ -801,12 +817,18 @@ footer {
 
 .delayed2-1 {animation-delay: 2.25s;}
 
-.animatedFadeInUp {opacity: 0;}
+.animatedFadeInUp, .animatedFadeInDown {opacity: 0;}
 
 .fadeInUp {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+}
+
+.fadeInDown {
+    opacity: 0;
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
 }
 
 a,
@@ -1396,8 +1418,28 @@ a.rolling-text:hover{
 /*WRITING page rules*/
 
 .writing-bg {
-	background-image: url(../img/writing/kintsugi.png); /*photo credit: https://noodmood.com.au/blogs/news/kintsugi-the-art-of-embracing-imperfection */
+	background-image: url(../img/writing/saudade-yet-still-hero.png);
+	/* background-image: url(../img/writing/kintsugi.png); photo credit: https://noodmood.com.au/blogs/news/kintsugi-the-art-of-embracing-imperfection */
 	background-position: center; /*used to be center 62%*/
+	filter: drop-shadow(rgba(0, 5, 49, 0.15) 0rem 0.5rem 1.5rem);
+}
+.writing-bg h1, .writing-bg h2 {color: #000531;}
+
+.writing-bg .mouse,
+.writing-bg .mouse-wheel,
+.writing-bg .m_scroll_arrows {border-color: #A37D45;}
+
+.bookcover {
+	max-width: 30rem;
+	max-height: auto;
+	border: 1px solid rgba(20, 20, 20, 0.25);
+}
+
+#newbook {
+	background: linear-gradient(0deg,rgba(245, 246, 241, 1) 0%, rgba(249, 250, 245, 1) 100%);
+	border: 1px solid rgba(226, 193, 145, 0.5);
+	border-radius: 2px;
+	filter: drop-shadow(0 0 1rem rgba(0, 5, 49, 0.33));
 }
 
 .bookpurchase {margin-top: 5rem;}
@@ -1723,8 +1765,6 @@ h2.notbuiltyet {cursor: auto !important;}
 	}
 	.tabs input[type=radio]:checked + label {filter: drop-shadow(#141414 0.4rem 0.4rem);}
 	.tabs input[type=radio]:checked + label + .tab {margin-bottom: 0.5rem;}
-
-	#ktak-cover {max-width: 37.5rem; max-height: auto;}
 }
 
 @media all and (min-width: 500px) {
@@ -1930,8 +1970,6 @@ h2.notbuiltyet {cursor: auto !important;}
 	  line-height: 6.5rem;
 	}
 
-	/* .smallertitlelargerres {width: 77%;} */
-
 	.quote-subhead {
 	  font-size: 2.4rem;
 	  line-height: 4.2rem;
@@ -2001,9 +2039,14 @@ h2.notbuiltyet {cursor: auto !important;}
 
 	.hero-hook {margin-top: 25vh;}
 
+	.writing-bg .smallertitlelargerres {
+		margin-top: 3rem;
+		margin-bottom: 6rem;
+		max-width: 65%;
+	}
 	.bookpurchase {margin-top: 3rem;}
-	.brandlogo {max-height: 5rem; width: auto; padding: 0;}
-	#strandlogo {padding: 0 10% !important;}
+	/* .brandlogo {max-height: 5rem; width: auto; padding: 0;} */
+	#strandlogo {padding: 0 20% !important;}
 	.purchasebtn {margin-top: 2rem; width: 95%;}
 	#skmt-img {padding: 0 !important; margin: 0 !important; background-color: #101010;}
 	.haiku {padding-top: 8rem;}
@@ -2022,6 +2065,14 @@ h2.notbuiltyet {cursor: auto !important;}
 	.minivid {max-height: 44rem;}
 	.researchstats {padding-left: 1rem;}
 	.trifold-about h6 {padding: 0 2rem;}
+}
+
+@media all and (min-width: 768px) and (max-width: 1299px) {
+	.bookcolumn .booktitle {
+		height: 72px;
+		vertical-align: middle;
+		line-height: 72px;
+	}
 }
 
 @media all and (max-width: 999px) {
@@ -2066,7 +2117,6 @@ h2.notbuiltyet {cursor: auto !important;}
 	.narrowcontent {max-width: 84rem !important;}
 
 	.home-header {width: 100% !important;}
-	/* .home-header h1, .header-words h1 {width: 74%;} */
 	.smallertitlelargerres {
 		font-size: 2.6rem;
 		line-height: 3.8rem;
@@ -2090,6 +2140,11 @@ h2.notbuiltyet {cursor: auto !important;}
 	#sampleVideo {padding: 2rem 0;}
 
 	.info-caption.pt-10 {padding-left: 50px; padding-right: 50px;}
+
+	.bookcolumn {
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 }
 
 @media all and (max-width: 1299px) {
@@ -2114,7 +2169,19 @@ h2.notbuiltyet {cursor: auto !important;}
 	.col-md-5-v2 {padding-left: 5rem;}
 	.project-header {max-width: 1300px;}
 	#padfix1 {padding-top: 15%;}
-	#ktak-cover {max-width: 40rem; max-height: auto;}
+	.writing-bg .smallertitlelargerres {max-width: 50%;}
+
+	.col-md-4-v3 {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	} /*this is specific to purchase links for books on the WRITING page*/
+	.brandlogo {max-width: 100%; height: auto;}
+
+	.bookcolumn {
+		padding-left: 5rem;
+		padding-right: 5rem;
+	}
 }
 
 @media all and (min-width: 1600px) {

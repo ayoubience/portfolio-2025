@@ -24,9 +24,17 @@ This is a mid-to-large overhaul of my prior UX portfolio that I built out back i
 
 Below will be any version notes, to-dos, etc.
 
+---
+### [v0.8.3] AS OF MAR.08.2026:
+
+- adding book #2 to 'Writing' page, including new hero section update to reflect that
+- updated how I display "Book" section so that I can display multiple books
+- very slight updates to 'About" page copy
+
+`When satisfied with updates, push and then merge into main as well`
 
 ---
-### [v0.8.1] AS OF JAN.26.2025:
+### [v0.8.2] AS OF JAN.27.2026:
 
 - slight recruiter suggestions factored into case studies
 - updated resume link
@@ -34,14 +42,14 @@ Below will be any version notes, to-dos, etc.
 `When satisfied with updates, push and then merge into main as well`
 
 ---
-### [v0.8.1] AS OF JAN.26.2025:
+### [v0.8.1] AS OF JAN.26.2026:
 
 - deleted my TT account, so I needed to replace the embedded videos in my Playground page with the actual videos I downloaded and saved
 
 `When satisfied with updates, push and then merge into main as well`
 
 ---
-### [v0.8] AS OF JAN.14.2025:
+### [v0.8] AS OF JAN.14.2026:
 
 - some very minor copy changes across pages
 - NEW CASE STUDY: smart census enrollment
